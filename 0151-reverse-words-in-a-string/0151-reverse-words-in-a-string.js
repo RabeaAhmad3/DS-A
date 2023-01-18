@@ -3,9 +3,14 @@
  * @return {string}
  */
 var reverseWords = function(s) {
+    //remove white spaces at start and end and remove two white spaces in a row everywhere
     s = s.trim().replace(/  +/g, ' ');
+    
+    //convert to array as strings are immutable in javascript
     let arrayS = [...s];
     
+    
+    //two pointer approach
     let start = 0;
     let end = arrayS.length-1;
     
