@@ -3,6 +3,7 @@
  * @return {void} Do not return anything, modify s in-place instead.
  */
 var reverseString = function(s) {
+    //two pointer approach
     start = 0;
     end = s.length-1;
     
